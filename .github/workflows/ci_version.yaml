@@ -11,6 +11,10 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: CI/CD
+    permissions:
+      contents: write
+      pull-requests: write
     env:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
