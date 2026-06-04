@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Polls Tutorial - Home</title>
+    <style>
+        :root {
+            --primary-color: #447e9b;
+            --secondary-color: #2c3e50;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 { margin-bottom: 0.5rem; color: var(--primary-color); }
+        p { margin-bottom: 2rem; color: #666; }
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .btn {
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            background-color: var(--primary-color);
+            border-radius: 6px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.9; }
+        .btn-secondary { background-color: #417690; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Django Tutorial</h1>
+        <p></p>
+        <div class="nav-links">
+            <a href="/polls/" class="btn">Polls Page</a>
+            <a href="/admin/" class="btn btn-secondary">Admin Page</a>
+        </div>
+    </div>
+</body>
+</html>
