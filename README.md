@@ -1,1 +1,1 @@
-This is a bugfix (5).
+This is a bugfix.
