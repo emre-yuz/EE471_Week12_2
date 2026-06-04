@@ -1,7 +1,7 @@
 {
   "name": "ee471-week12-2",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "devDependencies": {
     "semantic-release": "^24.0.0",
     "@semantic-release/npm": "^10.0.0",
