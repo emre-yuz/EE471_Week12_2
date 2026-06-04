@@ -1,7 +1,12 @@
 module.exports = {
   branches: ["main"],
   plugins: [
-    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        preset: "conventionalcommits"
+      }
+    ],
     "@semantic-release/release-notes-generator",
     [
       "@semantic-release/changelog",
@@ -12,7 +17,7 @@ module.exports = {
     [
       "@semantic-release/exec",
       {
-        prepareCmd: "python publish/bump_version.py"
+        prepareCmd: "python publish/bump_version.py ${nextRelease.version}"
       }
     ],
     [
