@@ -1,7 +1,7 @@
 {
   "name": "ee471-week12-2",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "semantic-release": "^24.0.0",
     "@semantic-release/commit-analyzer": "^10.0.0",
