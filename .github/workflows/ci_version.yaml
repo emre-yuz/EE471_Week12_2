@@ -29,19 +29,17 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: '20'
+
       - name: Install Node dependencies
         run: npm install
 
-      - name: Install semantic-release
-        run: npm install --save-dev semantic-release @semantic-release/github @semantic-release/changelog @semantic-release/npm
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx semantic-release
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11' 
+        run: npx semantic-release 
