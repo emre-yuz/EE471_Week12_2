@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/emre-yuz/EE471_Week12_2/compare/v1.0.0...v1.0.1) (2026-06-07)
+
+
+### Bug Fixes
+
+* bugfix readme. ([c82e5c6](https://github.com/emre-yuz/EE471_Week12_2/commit/c82e5c62c14ccbbb38cf6e97aa06af4429044c66))
+* buggggs ([521f6a8](https://github.com/emre-yuz/EE471_Week12_2/commit/521f6a8053e90494422e6a03d22b1dfbd4f7c35b))
+
 # 1.0.0 (2026-06-07)
 
 
